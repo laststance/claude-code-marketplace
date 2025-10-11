@@ -1,0 +1,8 @@
+{
+  "name": "mac-notification-hook",
+  "version": "0.1.0",
+  "description": "Send macOS desktop notifications whenever Claude Code emits Notification events.",
+  "license": "MIT",
+  "homepage": "https://github.com/laststance/claude-code-marketplace/mac-notification-hook",
+  "hooks": "./hooks/hooks.json"
+}
