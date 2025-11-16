@@ -13,6 +13,12 @@
       "description": "Send macOS desktop notifications whenever Claude Code emits Notification events.",
       "version": "0.1.0",
       "source": "./mac-notification-hook"
+    },
+    {
+      "name": "pwa-assets-generator",
+      "description": "Generate all required PWA assets from a single 1024x1024px image",
+      "version": "1.0.0",
+      "source": "./pwa-assets-generator"
     }
   ]
 }
