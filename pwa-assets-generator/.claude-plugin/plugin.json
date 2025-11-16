@@ -1,0 +1,15 @@
+{
+  "name": "pwa-assets-generator",
+  "description": "Generate all required PWA assets from a single 1024x1024px image",
+  "version": "1.0.0",
+  "author": {
+    "name": "Laststance",
+    "email": "ryota.murakami@laststance.io"
+  },
+  "skills": [
+    {
+      "name": "pwa-assets-generator",
+      "path": "./skills/pwa-assets-generator/SKILL.md"
+    }
+  ]
+}
