@@ -1,6 +1,7 @@
 ---
 name: pwa-assets-generator
 description: Generate all required PWA assets from a single 1024x1024px image. This skill creates app icons, favicons, Apple touch icons, maskable icons, badge icons, and placeholder screenshots for PWAs. Use when developers need to prepare PWA manifest assets, generate multiple icon sizes from a source image, or create a complete set of PWA-compliant images.
+allowed-tools: Bash, Read, Write
 ---
 
 # PWA Assets Generator

@@ -18,7 +18,16 @@
       "name": "pwa-assets-generator",
       "description": "Generate all required PWA assets from a single 1024x1024px image",
       "version": "1.0.0",
-      "source": "./pwa-assets-generator"
+      "source": "./pwa-assets-generator",
+      "author": {
+        "name": "Laststance",
+        "email": "ryota.murakami@laststance.io"
+      },
+      "license": "MIT",
+      "homepage": "https://github.com/laststance/claude-code-marketplace",
+      "repository": "https://github.com/laststance/claude-code-marketplace",
+      "keywords": ["pwa", "assets", "icons", "favicon", "manifest", "progressive-web-app"],
+      "category": "productivity"
     }
   ]
 }

@@ -5,11 +5,5 @@
   "author": {
     "name": "Laststance",
     "email": "ryota.murakami@laststance.io"
-  },
-  "skills": [
-    {
-      "name": "pwa-assets-generator",
-      "path": "./skills/pwa-assets-generator/SKILL.md"
-    }
-  ]
+  }
 }
