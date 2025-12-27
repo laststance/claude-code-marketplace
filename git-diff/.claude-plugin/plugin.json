@@ -1,0 +1,13 @@
+{
+  "name": "git-diff",
+  "description": "GitHub-style unified diff viewer with colored terminal output. Shows staged and unstaged changes with line numbers and syntax highlighting.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Laststance",
+    "email": "ryota.murakami@laststance.io"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/laststance/claude-code-marketplace",
+  "repository": "https://github.com/laststance/claude-code-marketplace",
+  "keywords": ["git", "diff", "github", "terminal", "cli", "developer-tools"]
+}
