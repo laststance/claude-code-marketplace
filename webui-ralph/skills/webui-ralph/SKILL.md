@@ -13,7 +13,7 @@ description: |
   "RALPH loop", "webui-ralph", "UI検証", "視覚検証"
 
   NOTE: This skill runs as an INFINITE LOOP until completion criteria met.
-allowed-tools: "Bash,Read,Write,Edit,Glob,Grep,MCPSearch,mcp__claude-in-chrome__*,mcp__plugin_playwright_playwright__browser_take_screenshot,mcp__plugin_playwright_playwright__browser_snapshot,mcp__plugin_playwright_playwright__browser_navigate"
+allowed-tools: "Bash,Read,Write,Edit,Glob,Grep,MCPSearch,mcp__claude-in-chrome__*,mcp__mac-mcp-server__take_screenshot"
 ---
 
 # WebUI RALPH Loop
