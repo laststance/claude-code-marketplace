@@ -43,21 +43,6 @@
       "repository": "https://github.com/laststance/claude-code-marketplace",
       "keywords": ["git", "diff", "github", "terminal", "cli", "developer-tools"],
       "category": "developer-tools"
-    },
-    {
-      "name": "webui-ralph",
-      "description": "RALPH Loop for Web UI visual verification. Runs infinite loop until 95%+ confidence across all UI states with stop hook enforcement.",
-      "version": "1.0.0",
-      "source": "./webui-ralph",
-      "author": {
-        "name": "Laststance",
-        "email": "ryota.murakami@laststance.io"
-      },
-      "license": "MIT",
-      "homepage": "https://github.com/laststance/claude-code-marketplace",
-      "repository": "https://github.com/laststance/claude-code-marketplace",
-      "keywords": ["ui", "verification", "ralph", "loop", "visual", "qa", "testing", "frontend"],
-      "category": "developer-tools"
     }
   ]
 }
