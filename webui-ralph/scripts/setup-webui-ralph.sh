@@ -113,21 +113,22 @@ If `claudedocs/ui_visual_test.md` doesn't exist, create it with exploratory test
 
 ### 0.5 Screenshot Tool Setup (CRITICAL)
 
-**You MUST use `mcp__mac-mcp-server__take_screenshot` to save screenshots to disk.**
+**You MUST use Playwright MCP to save screenshots to disk.**
 
 Before taking screenshots, load the MCP tool:
 ```
-MCPSearch({ query: "select:mcp__mac-mcp-server__take_screenshot" })
+MCPSearch({ query: "select:mcp__plugin_playwright_playwright__browser_take_screenshot" })
+MCPSearch({ query: "select:mcp__plugin_playwright_playwright__browser_navigate" })
 ```
 
 Screenshot workflow:
 ```
-1. mcp__claude-in-chrome__computer (action: "screenshot") → View current state
-2. mcp__mac-mcp-server__take_screenshot (filePath: "path/to/file.png") → SAVE to disk
+1. mcp__plugin_playwright_playwright__browser_navigate (url: "http://localhost:xxxx") → Navigate to page
+2. mcp__plugin_playwright_playwright__browser_take_screenshot (filename: "path/to/file.png") → SAVE to disk
 3. Read("path/to/file.png") → Verify file was saved correctly
 ```
 
-**Common Mistake**: Using only Chrome screenshot action. This does NOT save files!
+**Note**: Playwright MCP provides smaller file sizes than mac-mcp, avoiding API limits.
 
 ---
 
@@ -135,20 +136,18 @@ Screenshot workflow:
 
 ### 1.1 Page Navigation
 For each page:
-1. Navigate to page using `mcp__claude-in-chrome__navigate`
-2. Wait for load (`mcp__claude-in-chrome__computer` action: "wait")
-3. **CRITICAL: Save screenshot to file** using:
+1. Navigate to page using `mcp__plugin_playwright_playwright__browser_navigate`
+2. **CRITICAL: Save screenshot to file** using:
    ```
-   mcp__mac-mcp-server__take_screenshot({
-     filePath: "claudedocs/screenshots/<page>_<state>.png"
+   mcp__plugin_playwright_playwright__browser_take_screenshot({
+     filename: "claudedocs/screenshots/<page>_<state>.png"
    })
    ```
-4. Read the saved screenshot file and evaluate with Triple-Criteria
-5. If 95%+ → rename file: `mv claudedocs/screenshots/<page>_<state>.png claudedocs/screenshots/verify_<page>_<state>.png`
-6. If <95% → fix issues, re-capture
+3. Read the saved screenshot file and evaluate with Triple-Criteria
+4. If 95%+ → rename file: `mv claudedocs/screenshots/<page>_<state>.png claudedocs/screenshots/verify_<page>_<state>.png`
+5. If <95% → fix issues, re-capture
 
-**⚠️ IMPORTANT**: Do NOT use `mcp__claude-in-chrome__computer` screenshot action for saving files.
-That only returns base64 to the conversation. Use `mcp__mac-mcp-server__take_screenshot` with `filePath` to persist to disk.
+**Note**: Playwright MCP provides smaller, optimized screenshots suitable for API usage.
 
 ### 1.2 Edge Case Testing
 
@@ -221,13 +220,13 @@ Expected output should show `.png` files with non-zero size:
 -rw-r--r--  1 user  staff  180000 Jan 13 10:01 verify_dashboard_table.png
 ```
 
-**If directory is empty**: Screenshots were NOT saved. Go back to Phase 0.5 and use `mcp__mac-mcp-server__take_screenshot`.
+**If directory is empty**: Screenshots were NOT saved. Go back to Phase 0.5 and use Playwright MCP screenshot tool.
 
 ### 2.2 Status Decision
 
 | Situation | Action |
 |-----------|--------|
-| Directory is empty | 🔴 Go back to Phase 0.5, re-take screenshots with correct tool |
+| Directory is empty | 🔴 Go back to Phase 0.5, re-take screenshots with Playwright MCP |
 | All files have `verify_` | → Continue to 2.3 |
 | Some files missing `verify_` | → Review, fix, rename, continue loop |
 
