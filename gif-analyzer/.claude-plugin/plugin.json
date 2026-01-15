@@ -1,0 +1,9 @@
+{
+  "name": "gif-analyzer",
+  "description": "Analyze animated GIF files by extracting frames and viewing them as sequential video",
+  "version": "1.0.0",
+  "author": {
+    "name": "Laststance",
+    "email": "ryota.murakami@laststance.io"
+  }
+}
