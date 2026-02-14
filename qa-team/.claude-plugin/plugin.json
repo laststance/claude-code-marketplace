@@ -1,0 +1,9 @@
+{
+  "name": "qa-team",
+  "description": "Launch comprehensive QA Agent Team for post-implementation verification with 5 specialist perspectives",
+  "version": "1.0.0",
+  "author": {
+    "name": "Laststance",
+    "email": "ryota.murakami@laststance.io"
+  }
+}

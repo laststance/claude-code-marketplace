@@ -4,6 +4,9 @@ This repository hosts the Laststance plugin marketplace definition for Claude Co
 
 ## Marketplace Contents
 - `mac-notification-hook` – Sends native macOS desktop notifications whenever Claude Code emits `Notification` hook events.
+- `pwa-assets-generator` – Generate all required PWA assets from a single 1024x1024px image.
+- `git-diff` – GitHub-style unified diff viewer with colored terminal output.
+- `qa-team` – Launch comprehensive QA Agent Team for post-implementation verification with 5 specialist perspectives (Visual, Functional, HIG, Edge Cases, UX).
 
 ## ⚠️ Known Limitations
 
@@ -86,15 +89,17 @@ Until this issue is resolved, please use the **manual installation method** belo
 ```
 .
 ├── .claude-plugin/
-│   └── marketplace.json   # Marketplace manifest (required)
-├── mac-notification-hook/ # Plugin source code and manifest
+│   └── marketplace.json      # Marketplace manifest (required)
+├── mac-notification-hook/    # macOS notification hook plugin
+├── pwa-assets-generator/     # PWA asset generation plugin
+├── git-diff/                 # Git diff viewer plugin
+├── gif-analyzer/             # GIF frame analysis plugin
+├── qa-team/                  # QA Agent Team plugin
 │   ├── .claude-plugin/
-│   │   └── plugin.json    # Plugin metadata
-│   ├── hooks/
-│   │   └── hooks.json     # Hook wiring
-│   └── README.md          # Plugin-specific instructions
-├── AGENTS.md              # Reserved for future agent docs
-└── LICENSE                # Project license (MIT)
+│   │   └── plugin.json       # Plugin metadata
+│   ├── skills/qa-team/       # Skill with references, scripts, workflows
+│   └── README.md             # Plugin-specific instructions
+└── LICENSE                   # Project license (MIT)
 ```
 
 ## 🔧 Configuration Options
