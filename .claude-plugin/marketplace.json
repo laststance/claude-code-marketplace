@@ -30,21 +30,6 @@
       "category": "productivity"
     },
     {
-      "name": "git-diff",
-      "description": "GitHub-style unified diff viewer with colored terminal output. Shows staged and unstaged changes with line numbers and syntax highlighting.",
-      "version": "1.0.0",
-      "source": "./git-diff",
-      "author": {
-        "name": "Laststance",
-        "email": "ryota.murakami@laststance.io"
-      },
-      "license": "MIT",
-      "homepage": "https://github.com/laststance/claude-code-marketplace",
-      "repository": "https://github.com/laststance/claude-code-marketplace",
-      "keywords": ["git", "diff", "github", "terminal", "cli", "developer-tools"],
-      "category": "developer-tools"
-    },
-    {
       "name": "qa-team",
       "description": "Launch comprehensive QA Agent Team for post-implementation verification with 5 specialist perspectives",
       "version": "1.0.0",
